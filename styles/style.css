@@ -1,0 +1,59 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COLORS*/
+
+.blue-bg{
+    background-color: #0084FD;
+}
+.blue{
+    color: #0084FD;
+}
+
+.lightblue-bg{
+    background-color:#B5DDFF;
+}
+
+.purple-bg{
+    background-color: #9792E4;
+}
+.purple{
+    color: #9792E4;
+}
+
+.yellow{
+    color: #FDC15F;
+}
+
+.white{
+    color: white;
+}
+
+
+/*UTILITY CLASSES*/
+
+.wrapper{
+    width: 100%;
+}
+
+.container{
+    /*width: 60%; -- Desktop*/
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.small-container{
+    /*width: calc(100% / 3); -- Desktop*/
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.btn{
+    border: none;
+    border-radius: 3rem;
+}
+
