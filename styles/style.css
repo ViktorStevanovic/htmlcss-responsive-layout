@@ -42,6 +42,14 @@
 
 /*UTILITY CLASSES*/
 
+i{
+    margin: 0 1em;
+}
+
+img{
+    width: 100%;
+}
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -52,6 +60,8 @@
 .container{
     /*width: 60%; -- Desktop*/
     width: 100%;
+    padding: 2.5em 1.5em;
+    gap: 2em;
 }
 
 .small-container{
@@ -63,20 +73,29 @@
 .btn{
     border: none;
     border-radius: 3rem;
-    padding: .5em;
+    padding: 1px 3rem;
+    color: white;
+    font-size: 1rem;
 }
 
 .img {
     width: 100%;
+    display: flex;
 }
 
 .big-icon{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
 }
 
 /*Header*/
@@ -101,3 +120,28 @@
     display: none;
 }
 
+.card{
+    width: 100%;
+    border-radius: 1.5em;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    padding: 1em 2em;
+}
+
+.card h1{
+    padding: 1em 0;
+}
+
+.card p{
+    margin-bottom: 2em;
+}
+
+.card i{
+    padding: 1rem 0;
+}
