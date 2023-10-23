@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 /*COLORS*/
 
 .blue-bg{
@@ -40,6 +42,13 @@
     color: black;
 }
 
+.grey{
+    color: rgb(232, 232, 232);
+}
+
+.light-black{
+    background-color: #333333;
+}
 /*UTILITY CLASSES*/
 
 i{
@@ -50,17 +59,20 @@ img{
     width: 100%;
 }
 
+a{
+    color: #9792E4;
+}
+
 .wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .container{
     /*width: 60%; -- Desktop*/
     width: 100%;
-    padding: 2.5em 1.5em;
+    padding: 2rem 2rem;
     gap: 2em;
 }
 
@@ -73,7 +85,7 @@ img{
 .btn{
     border: none;
     border-radius: 3rem;
-    padding: 1px 3rem;
+    padding: .5rem 3rem;
     color: white;
     font-size: 1rem;
 }
@@ -89,6 +101,7 @@ img{
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .col{
@@ -96,6 +109,15 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items:center ;
+    gap: 2rem;
+}
+
+.big-title{
+    font-size: 2rem;
+}
+
+.huge-title{
+    font-size: 3rem;
 }
 
 /*Header*/
@@ -120,9 +142,13 @@ img{
     display: none;
 }
 
+/*MAIN SECTION*/
+
+
 .card{
     width: 100%;
     border-radius: 1.5em;
+    text-align: center;
 }
 
 .description{
@@ -130,18 +156,182 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 2rem;
+    gap: 1.5rem;
+}
+.card:first-of-type .description{
+    text-align: left;
+    align-items: flex-start;
+}
+
+.description button {
+    padding: .5rem 2.5rem;
+}
+
+.description button i{
+    margin: 0;
+    padding: 0 .5rem;
+}
+
+.arrow-down{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #9792E4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
     font-weight: 300;
-    padding: 1em 2em;
 }
 
-.card h1{
-    padding: 1em 0;
+.profile-card{
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
-.card p{
-    margin-bottom: 2em;
+
+
+.profile-img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
-.card i{
-    padding: 1rem 0;
+.nat{
+    background-image: url(../img/testimonial1.jpg);
+}
+.celia{
+    background-image: url(../img/testimonial2.jpg);
+}
+.bob{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+.benefits-card{
+    padding: 2rem 2rem;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.benefits-card p{
+    text-align: left;
+}
+
+.about-us{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.first-about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.second-about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.left-text{
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.tony{
+    background-image: url(../img/about.jpg);
+}
+
+.about-img{
+    margin: 0;
+    margin-top: .5rem;
+    padding: 0;
+}
+
+.tony i{
+    font-size: 3rem;
+    padding-left: 3.5rem;
+}
+
+.linkeldn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.second-about button{
+    border: none;
+    border-radius: 1rem;
+    padding: 5px 10px;
+    color: white;
+}
+
+.second-about button i{
+    margin: 0;
+    padding-right:4px ;
+}
+
+.get-started{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.get-started h3{
+    font-size: 1em;
+}
+
+.big-btn{
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+}
+
+.small-text{
+    font-size: 0.7rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
 }
