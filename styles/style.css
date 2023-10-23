@@ -152,7 +152,7 @@ a{
 /*MAIN SECTION*/
 
 
-.card{
+.card, .big-card{
     width: 100%;
     border-radius: 1.5em;
     text-align: center;
@@ -171,9 +171,8 @@ a{
     padding: 2rem 2rem;
     gap: 1.5rem;
 }
-.card:first-of-type .description{
+.big-card{
     text-align: left;
-    align-items: flex-start;
 }
 
 .description button {
@@ -377,10 +376,33 @@ a{
 
 /*MEDIA QUARY*/
 
-@media all and (min-width:480px){
+@media all and (min-width:576px){
     
     .card{
         width: calc((100% - 4rem) / 3);
+    }
+
+    .big-card{
+        width: calc(((100% - 4rem) / 3) * 2);
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .big-card .description{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .big-card .img{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 2rem;
+    }
+
+    .big-card .img img{
+        width: 65%;
     }
 
     .col{
@@ -434,6 +456,10 @@ a{
         font-size: 4rem;
     }
 
+    .big-title{
+        width: 100%;
+    }
+
     .links{
         width: 60%;
     }
@@ -444,7 +470,7 @@ a{
 
 }
 
-@media all and (min-width:768px){
+@media all and (min-width:992px){
     .container{
         width: 60%;
     }
@@ -459,6 +485,29 @@ a{
     .nav-list{
         display: flex;
     }
+
+    .big-card{
+        flex-direction: row;
+    }
+    .big-card .description{
+        width: 50%;
+        align-self: flex-start;
+        padding-right: 0;
+    }
+    .big-card .img{
+        width: 50%;
+        align-self: flex-end;
+        justify-content: right;
+        padding-left: 0;
+ 
+    }
+
+    .big-card .img img{
+        text-align: right;
+        width: 80%;
+    }
+
+
 
     .planning{
         width: calc(50% - 1rem);
@@ -514,3 +563,4 @@ a{
         padding: 0;
     }
 }
+
