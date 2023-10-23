@@ -51,10 +51,6 @@ body{
 }
 /*UTILITY CLASSES*/
 
-i{
-    margin: 0 1em;
-}
-
 img{
     width: 100%;
 }
@@ -63,7 +59,7 @@ a{
     color: #9792E4;
 }
 
-.wrapper{
+.wrapper, .nav-wrapper{
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -73,7 +69,7 @@ a{
     /*width: 60%; -- Desktop*/
     width: 100%;
     padding: 2rem 2rem;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .small-container{
@@ -173,6 +169,22 @@ a{
     padding: 0 .5rem;
 }
 
+.planning{
+    width: 100%;
+    text-align: center;
+}
+
+.developement{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+}
+
+.developement p{
+    font-style: italic;
+}
+
 .arrow-down{
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -210,6 +222,15 @@ a{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.profile-desc{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .nat{
@@ -276,7 +297,7 @@ a{
 
 .tony i{
     font-size: 3rem;
-    padding-left: 3.5rem;
+    margin-left: 7rem;
 }
 
 .linkeldn{
@@ -291,6 +312,7 @@ a{
     border-radius: 1rem;
     padding: 5px 10px;
     color: white;
+    align-self: flex-start;
 }
 
 .second-about button i{
@@ -334,4 +356,77 @@ a{
     justify-content: center;
     gap: 3rem;
     width: 100%;
+}
+
+
+
+/*MEDIA QUARY*/
+
+@media all and (min-width:480px){
+    
+    
+
+    .card{
+        width: calc((100% - 4rem) / 3);
+    }
+
+    .col{
+        justify-content: flex-start;
+    }
+
+    .planning{
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .planning h1{
+        font-size: 3.5rem;
+    }
+
+    .profile-card{
+        flex-direction: row;
+    }
+
+    .profile-desc{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .benefits-card{
+        width: calc((100% - 2rem) / 2);
+        gap: 2rem;
+    }
+
+    .first-about{
+        width: calc(60% - 1rem);
+        padding: 2rem;
+    }
+    .second-about{
+        width: calc(40% - 1rem);
+        padding: 2rem;
+    }
+
+    .get-started{
+        width: 80%;
+    }
+
+    .get-started h1{
+        font-size: 2.5rem;
+    }
+
+    .get-started .huge-title{
+        font-size: 4rem;
+    }
+
+    .links{
+        width: 60%;
+    }
+    
+    .wrapper{
+        padding: 2rem 0;
+    }
+
 }
